@@ -18,17 +18,19 @@ public class TextAdventureGame {
     public static Scanner input = new Scanner(System.in);
 
     // valid commands
-    public static String validCmd[] = {"n", "s", "w", "e", "take", "drop", "use"};
+    public static String validCmd[] = {"n", "s", "w", "e", "take", "look", "use", "inventory", "help"};
     public static List <String> validCmdList = Arrays.asList(validCmd);
     
     // Parse command function to parse the command and pass them to appropriate functions
-    static void parseCommand(String command, Game gameEnv){
+    static void parseCommand(String command, Game gameEnv) throws InterruptedException{
         if(command.length()==1 && validCmdList.contains(command)){
             gameEnv.runCommandDirection(command);
+        } else if(command.length()>1 && validCmdList.contains(command)){
+            gameEnv.runCommandAction(command);
         }
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws InterruptedException{
 
         new UserInterface();
         // Game Start header
@@ -52,9 +54,9 @@ public class TextAdventureGame {
                     gameEnv.player.getName(); // for raising NullPointerException
 
                     // welcome back message
-                    System.out.println(UserInterface.GREEN+"\n\s\s\s\4--------------------------------\4");
-                    System.out.println(UserInterface.CYAN+"\s\s\s     WELCOME BACK," + gameEnv.player.getName());
-                    System.out.println(UserInterface.GREEN+"\s\s\s\4--------------------------------\4"+UserInterface.WHITE);
+                    System.out.println(UserInterface.GREEN+"\n\4--------------------------------\4");
+                    System.out.println(UserInterface.CYAN+"     WELCOME BACK," + gameEnv.player.getName());
+                    System.out.println(UserInterface.GREEN+"\4--------------------------------\4"+UserInterface.WHITE);
 
                     //printing users last room name, descroption
                     System.out.println("\n| You were at, "+gameEnv.getLocationRoom().getName());
@@ -64,15 +66,29 @@ public class TextAdventureGame {
                 } else{
                     // Taking initial details from the player
                     input.nextLine();
-                    System.out.print("\n<\4> Name: ");
+                    System.out.print(UserInterface.WHITE+"\n<\4> Name: ");
                     String pName = input.nextLine();
+                    
+                    // Loading ... Animation
+                    System.out.print(UserInterface.GREEN + "\nGame starting");
+                    for(int i = 0; i < 3; i++){
+                        Thread.sleep(1000);
+                        System.out.print(".");
+                    }
+                    System.out.println(UserInterface.WHITE);
 
                     // create New game with provided details
                     gameEnv = new Game(pName, "Main Player");
 
-                    System.out.println("\n| "+gameEnv.getLocationRoom().getName().toUpperCase());
+                    System.out.println("\n| You are in "+gameEnv.getLocationRoom().getName().toUpperCase());
                     System.out.println("\4-------------------------\4");
-                    System.out.println(gameEnv.getLocationRoom().getDescription()+"\n");
+                    
+                    for(int i = 0; i < gameEnv.getLocationRoom().getDescription().length(); i++){
+                        System.out.print(gameEnv.getLocationRoom().getDescription().charAt(i));
+                        Thread.sleep(10);
+                    }
+                    Thread.sleep(700);
+                    System.out.println();
                 }
             } catch(InputMismatchException e){
                 input.nextLine();
@@ -108,13 +124,16 @@ public class TextAdventureGame {
             5. The saveGame() method is used to save the game environment
             in a file called "saveGame.txt" 
         */
-        System.out.print(UserInterface.WHITE+"\n<\4> Do you want to save the progress?\n<\4> ");
+        System.out.print(UserInterface.PURPLE+"\n<\4> Do you want to save the progress?\n<\4> ");
         command = input.nextLine().toLowerCase().strip();
         try{
             if(command.equals("y")){
                 new SaveGame().saveGame(gameEnv);
-                System.out.println(UserInterface.GREEN+"Game saved");
-
+                System.out.print(UserInterface.GREEN+"<\4> Game saved");
+                for(int i = 0; i < 3; i++){
+                    Thread.sleep(1000);
+                    System.out.print(".");
+                }
             } else if(command.equals("n")){
                 System.out.println("<\4> Quiting the Game");
             }

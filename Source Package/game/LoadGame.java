@@ -18,7 +18,7 @@ public class LoadGame {
                 objectFile.close();
                 return gameEnv;
             } catch(Exception e){
-                System.out.println("LoadGame error occured: " + e);
+
             }
             
         }
