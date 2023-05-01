@@ -124,7 +124,7 @@ public class TextAdventureGame {
             5. The saveGame() method is used to save the game environment
             in a file called "saveGame.txt" 
         */
-        System.out.print(UserInterface.PURPLE+"\n<\4> Do you want to save the progress?\n<\4> ");
+        System.out.print(UserInterface.CYAN+"\n<\4> Do you want to save the progress?\n<\4> ");
         command = input.nextLine().toLowerCase().strip();
         try{
             if(command.equals("y")){

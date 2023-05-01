@@ -26,31 +26,31 @@ public class Game implements Serializable{
         */
 
         // 0
-        map.add(new Room("Forest", GREEN+"The forest before you is a vast and ancient realm, a place where the trees loom like giants and the very air is thick with magic and mystery.\nBut for those brave enough to explore its winding paths and hidden glades, the forest is a place of wonder and enchantment, a realm where anything is possible.", 1, 2, 4, -1));
+        map.add(new Room("Forest", GREEN+"The forest before you is a vast and ancient realm,\na place where the trees loom like giants and the very air is thick with magic and mystery.\nBut for those brave enough to explore its winding paths and hidden glades,\nthe forest is a place of wonder and enchantment,\na realm where anything is possible.", 1, 2, 4, -1));
 
         //1
-        map.add(new Room("Dead end", RED+"You come to a dead end. The path ends abruptly, with no sign of a way forward. The forest around you seems to close in, the trees pressing in from all sides.\nThe dead end seems to be more than just a simple obstacle; it feels like a warning, a sign that you have wandered into a place where you do not belong.", -1, 0, -1, -1));
+        map.add(new Room("Dead end", RED+"You come to a dead end.\nThe path ends abruptly, with no sign of a way forward.\nThe forest around you seems to close in, the trees pressing in from all sides.\nThe dead end seems to be more than just a simple obstacle; it feels like a warning,\na sign that you have wandered into a place where you do not belong.", -1, 0, -1, -1));
 
         //2
-        map.add(new Room("River", BLUE+"The river before you is a serpent, winding its way through the landscape with sinuous grace and power.\nThose who dare to explore its currents do so at their own risk\nSome say that it is alive, a creature of magic and mystery that moves with a will of its own.", 0, 3, -1, -1));
+        map.add(new Room("River", BLUE+"The river before you is a serpent,\nwinding its way through the landscape with sinuous grace and power.\nThose who dare to explore its currents do so at their own risk\nSome say that it is alive,\na creature of magic and mystery that moves with a will of its own.", 0, 3, -1, -1));
 
         //3
-        map.add(new Room("Mountains", GREEN+"The mountains before you are titans, vast and ancient beyond comprehension.\nLegends speak of titans that walked the earth in ancient times, and one cannot help but feel that these mountains are the petrified remnants of those same godlike beings, now frozen in time.", 2, -1, 8, -1));
+        map.add(new Room("Mountains", GREEN+"The mountains before you are titans, vast and ancient beyond comprehension.\nLegends speak of titans that walked the earth in ancient times,\nand one cannot help but feel that these mountains are the petrified remnants of those same godlike beings,\nnow frozen in time.", 2, -1, 8, -1));
 
         //4
-        map.add(new Room("Tunnle", BLACK+"The tunnel before you is a dark and ominous gateway, leading deep into the heart of the earth.\nIts walls are rough-hewn and jagged, carved from the living rock by unknown hands.\nThe air within is cold and damp, and the only sound is the distant drip of water echoing off the stone.", 5, -1, 11, 0));
+        map.add(new Room("Tunnle", BLACK+"The tunnel before you is a dark and ominous gateway,\nleading deep into the heart of the earth.\nIts walls are rough-hewn and jagged, carved from the living rock by unknown hands.\nThe air within is cold and damp,\nand the only sound is the distant drip of water echoing off the stone.", 5, -1, 11, 0));
 
         //5
-        map.add(new Room("Coal Mine", BLACK+"The coal mine before you is a place of darkness and danger, a realm where the very earth seems to be in a state of constant turmoil.\nThe only light coming from the flickering lantern that you carry in your hand. The tunnels are narrow and claustrophobic, and the walls are slick with moisture.", -1, 4, 6, -1));
+        map.add(new Room("Coal Mine", BLACK+"The coal mine before you is a place of darkness and danger,\na realm where the very earth seems to be in a state of constant turmoil.\nThe only light coming from the flickering lantern that you carry in your hand.\nThe tunnels are narrow and claustrophobic,\nand the walls are slick with moisture.", -1, 4, 6, -1));
 
         //6
-        map.add(new Room("Diamond Mine", PURPLE+"The diamond mine before you is a place of wonder and danger, a realm where untold riches lie hidden beneath the earth.\nThe diamonds that lie hidden within its walls are said to be the most precious in the world, glittering like stars in the darkness,\nand coveted by kings and emperors alike", -1, -1, -1, 5));
+        map.add(new Room("Diamond Mine", PURPLE+"The diamond mine before you is a place of wonder and danger,\na realm where untold riches lie hidden beneath the earth.\nThe diamonds that lie hidden within its walls are said to be the most precious in the world,\nglittering like stars in the darkness,\nand coveted by kings and emperors alike", -1, -1, -1, 5));
 
         //7
-        map.add(new Room("Mountains", GREEN+"The mountain before you is like nothing you have ever seen before. It is not a towering peak, nor a jagged range of craggy cliffs. It is a smooth, perfectly symmetrical dome, rising from the earth like a giant, rounded bowl. Its sides are steep, but not so much as to be impossible to climb, and its peak is broad and flat, like a table set high above the world.", -1, 8, 12, -1));
+        map.add(new Room("Mountains", GREEN+"The mountain before you is like nothing you have ever seen before.\nIt is not a towering peak, nor a jagged range of craggy cliffs.\nIt is a smooth, perfectly symmetrical dome,\nrising from the earth like a giant, rounded bowl.\nIts sides are steep, but not so much as to be impossible to climb,\nand its peak is broad and flat, like a table set high above the world.", -1, 8, 12, -1));
         
         //8
-        map.add(new Room("Cave", BLACK+"The cave before you is a gaping maw, an entrance to a world that lies hidden beneath the earth.\nIts mouth is dark and forbidding, and the air around it is cool and musty\nAs you step inside, the darkness presses in around you, and the only sounds are the drip of water", 7, 9, 13, 3));
+        map.add(new Room("Cave", BLACK+"The cave before you is a gaping maw,\nan entrance to a world that lies hidden beneath the earth.\nIts mouth is dark and forbidding, and the air around it is cool and musty\nAs you step inside, the darkness presses in around you,\nand the only sounds are the drip of water", 7, 9, 13, 3));
         
         //9
         map.add(new Room("Demon Portal", PURPLE+"A demon portal is a gateway to a dark and twisted realm beyond our own.\nIt is a vortex of swirling energy, crackling with dark magic and the sounds of tortured souls.\nThe air around it is heavy with the stench of brimstone and decay, and those who stand too close can feel the heat of its otherworldly energies.", 8, -1, 10, -1));
