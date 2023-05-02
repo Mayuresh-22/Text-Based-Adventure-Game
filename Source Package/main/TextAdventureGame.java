@@ -82,7 +82,7 @@ public class TextAdventureGame {
                     
                     for(int i = 0; i < gameEnv.getLocationRoom().getDescription().length(); i++){
                         System.out.print(gameEnv.getLocationRoom().getDescription().charAt(i));
-                        Thread.sleep(10);
+                        Thread.sleep(15);
                     }
                     Thread.sleep(700);
                     System.out.println();
