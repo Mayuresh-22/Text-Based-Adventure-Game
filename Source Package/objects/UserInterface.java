@@ -49,6 +49,7 @@ public class UserInterface {
             Thread.sleep(1000);
             System.out.print(".");
         }
+        Thread.sleep(100);
         System.out.println(UserInterface.WHITE);
     }
 

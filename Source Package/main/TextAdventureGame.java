@@ -68,9 +68,10 @@ public class TextAdventureGame {
                 } else{
                     // Taking initial details from the player
                     input.nextLine();
-                    System.out.print(UserInterface.WHITE+"\n<\4> Name: ");
+                    System.out.print(UserInterface.WHITE+"\n<\4> Your Name: ");
                     String pName = input.nextLine();
                     
+                    // Game loading animations
                     UserInterface.gameStartLoadingAnimation();
 
                     // create New game with provided details
@@ -130,6 +131,7 @@ public class TextAdventureGame {
                     Thread.sleep(1000);
                     System.out.print(".");
                 }
+                System.out.println(UserInterface.WHITE);
             } else if(command.equals("n")){
                 System.out.println("<\4> Quiting the Game");
             }
