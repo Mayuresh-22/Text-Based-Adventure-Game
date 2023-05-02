@@ -2,13 +2,14 @@ package objects;
 
 
 public class Room extends Description{
-    private int n, s, w, e;
-    public Room(String rName, String rDescription, int n, int s, int w, int e){
+    private int n, s, w, e, coins;
+    public Room(String rName, String rDescription, int n, int s, int w, int e, int coins){
         super(rName, rDescription);
         this.n = n;
         this.s = s;
         this.w = w;
         this.e = e;
+        this.coins = coins;
     }
 
     // getting directions of the room
