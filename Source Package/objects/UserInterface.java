@@ -2,6 +2,7 @@ package objects;
 
 public class UserInterface {
 
+    // Color constants
     public final static String GREEN = "\u001B[32m";
     public final static String CYAN = "\u001B[36m";
     public final static String RED = "\u001B[31m";
@@ -10,6 +11,7 @@ public class UserInterface {
     public final static String PURPLE = "\u001B[35m";
     public final static String BLACK = "\u001B[30m";
 
+    // Game start Header
     public static void gameStart() throws InterruptedException{
         // Game header (Starting screen)
         System.out.println(GREEN+"\s\s\s\4---------------------------------------------------------\4");
@@ -35,6 +37,7 @@ public class UserInterface {
         System.out.println();
     }
 
+    // Game start options
     public static void gameStartOption(){
         System.out.println(CYAN+"Would you like to continue with? ");
         System.out.println("\4------------\4  \4--------------\4");
@@ -42,7 +45,7 @@ public class UserInterface {
         System.out.print("\4------------\4  \4--------------\4\n<\4> ");
     }
 
-    // Game start Loading ... Animation
+    // Game start Loading Animation
     public static void gameStartLoadingAnimation() throws InterruptedException {
         System.out.print(UserInterface.GREEN + "\nGame starting");
         for(int i = 0; i < 3; i++){
@@ -51,6 +54,16 @@ public class UserInterface {
         }
         Thread.sleep(100);
         System.out.println(UserInterface.WHITE);
+    }
+
+    // Game end Animation
+    public static void gameEndAnimation() throws InterruptedException {
+        String gameEndMsg = "THE END";
+        for(int i = 0; i < gameEndMsg.length(); i++){
+            Thread.sleep(700);
+            System.out.print(gameEndMsg.charAt(i));
+        }
+        Thread.sleep(100);
     }
 
 }

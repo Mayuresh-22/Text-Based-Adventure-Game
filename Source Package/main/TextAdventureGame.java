@@ -58,7 +58,6 @@ public class TextAdventureGame {
                     System.out.println(UserInterface.CYAN+"     WELCOME BACK, " + gameEnv.player.getName());
                     System.out.println(UserInterface.GREEN+"\4--------------------------------\4"+UserInterface.WHITE);
 
-                    System.out.println(UserInterface.WHITE+"\4-------------------------\4");
                     UserInterface.gameStartLoadingAnimation();
                     System.out.println("\n\4-------------------------\4");
 

@@ -3,6 +3,7 @@ package game;
 import java.util.Vector;
 import java.io.Serializable;
 import objects.Room;
+import objects.UserInterface;
 import objects.Player;
 import help.Help;
 
@@ -89,7 +90,7 @@ public class Game implements Serializable{
     }
 
     // Handle's direction commands
-    public void runCommandDirection(String command){
+    public void runCommandDirection(String command) throws InterruptedException{
         int open = -1;
         /*
          * In order to move the player to the desired location,
@@ -123,6 +124,20 @@ public class Game implements Serializable{
 
             System.out.println(WHITE+"\n| Moved to, "+getLocationRoom().getName().toUpperCase());
             System.out.println("\4-------------------------\4");
+
+            // If room is the last room
+            if(open == 17){
+                System.out.println(getLocationRoom().getDescription());
+                System.out.println("\n\4-------------------------\4");
+                System.out.println("Player Name: " + player.getName());
+                System.out.println("Player Description: " + player.getDescription());
+                System.out.println("Total Coins Earned: " + player.getTotalCoins() + "\n");
+
+                UserInterface.gameEndAnimation();
+                System.out.println("\n\4-------------------------\4");
+                System.out.println(UserInterface.WHITE);
+            }
+
         } else{
             System.out.println(RED+"\nNO EXIT\n");
         }
