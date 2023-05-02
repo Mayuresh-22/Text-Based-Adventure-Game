@@ -58,7 +58,9 @@ public class TextAdventureGame {
                     System.out.println(UserInterface.CYAN+"     WELCOME BACK, " + gameEnv.player.getName());
                     System.out.println(UserInterface.GREEN+"\4--------------------------------\4"+UserInterface.WHITE);
 
+                    System.out.println(UserInterface.WHITE+"\4-------------------------\4");
                     UserInterface.gameStartLoadingAnimation();
+                    System.out.println("\n\4-------------------------\4");
 
                     //printing users last room name, descroption
                     System.out.println("\n| You were at, "+gameEnv.getLocationRoom().getName());
@@ -68,11 +70,15 @@ public class TextAdventureGame {
                 } else{
                     // Taking initial details from the player
                     input.nextLine();
+                    System.out.println(UserInterface.WHITE+"\4-------------------------\4");
                     System.out.print(UserInterface.WHITE+"\n<\4> Your Name: ");
                     String pName = input.nextLine();
+
                     
                     // Game loading animations
+                    System.out.println(UserInterface.WHITE+"\n\4-------------------------\4");
                     UserInterface.gameStartLoadingAnimation();
+                    System.out.println("\n\4-------------------------\4\n");
 
                     // create New game with provided details
                     gameEnv = new Game(pName, "Main Player");
