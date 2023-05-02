@@ -27,6 +27,11 @@ public class Room extends Description{
     public int getE() {
         return e;
     }
+
+    public int getCoins() {
+        return coins;
+    }
+
     @Override
     public String toString() {
 		return "\n";

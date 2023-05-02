@@ -79,7 +79,7 @@ public class Game implements Serializable{
         //17
         map.add(new Room("The Shimmering gateway", PURPLE+"The portal before you is a shimmering gateway,\na doorway between worlds that glows with a soft, otherworldly light.\nIt is said that this portal is only accessible to those who have proven their worth,\npassing through countless trials and challenges to reach this point.\nYou know that you must speak the magical words that you have gathered on your journey to activate the portal and gain access to the world beyond.\nIn an instant, you are transported to a world where you belong.\n\nTHE END", -1, -1, -1, -1, 1000));
     
-        player = new Player(pName, pDescription);
+        player = new Player(pName, pDescription, 0);
     }
 
     // get Players current location's room object
@@ -115,7 +115,11 @@ public class Game implements Serializable{
         }
 
         if(open != -1){
+            // Move player to the location if direction != NO EXIT (-1)
             player.moveToLocation(open);
+            // Updating total coins of the users 
+            player.totalCoins = player.totalCoins + getLocationRoom().getCoins();
+
             System.out.println(WHITE+"\n| Moved to, "+getLocationRoom().getName().toUpperCase());
             System.out.println("\4-------------------------\4");
         } else{
