@@ -55,8 +55,10 @@ public class TextAdventureGame {
 
                     // welcome back message
                     System.out.println(UserInterface.GREEN+"\n\4--------------------------------\4");
-                    System.out.println(UserInterface.CYAN+"     WELCOME BACK," + gameEnv.player.getName());
+                    System.out.println(UserInterface.CYAN+"     WELCOME BACK, " + gameEnv.player.getName());
                     System.out.println(UserInterface.GREEN+"\4--------------------------------\4"+UserInterface.WHITE);
+
+                    UserInterface.gameStartLoadingAnimation();
 
                     //printing users last room name, descroption
                     System.out.println("\n| You were at, "+gameEnv.getLocationRoom().getName());
@@ -69,13 +71,7 @@ public class TextAdventureGame {
                     System.out.print(UserInterface.WHITE+"\n<\4> Name: ");
                     String pName = input.nextLine();
                     
-                    // Loading ... Animation
-                    System.out.print(UserInterface.GREEN + "\nGame starting");
-                    for(int i = 0; i < 3; i++){
-                        Thread.sleep(1000);
-                        System.out.print(".");
-                    }
-                    System.out.println(UserInterface.WHITE);
+                    UserInterface.gameStartLoadingAnimation();
 
                     // create New game with provided details
                     gameEnv = new Game(pName, "Main Player");

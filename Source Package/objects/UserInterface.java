@@ -42,4 +42,14 @@ public class UserInterface {
         System.out.print("\4------------\4  \4--------------\4\n<\4> ");
     }
 
+    // Game start Loading ... Animation
+    public static void gameStartLoadingAnimation() throws InterruptedException {
+        System.out.print(UserInterface.GREEN + "\nGame starting");
+        for(int i = 0; i < 3; i++){
+            Thread.sleep(1000);
+            System.out.print(".");
+        }
+        System.out.println(UserInterface.WHITE);
+    }
+
 }
