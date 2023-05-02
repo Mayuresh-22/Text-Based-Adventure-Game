@@ -1,9 +1,10 @@
 package game;
+
 import java.util.Vector;
 import java.io.Serializable;
 import objects.Room;
 import objects.Player;
-
+import help.Help;
 
 
 public class Game implements Serializable{
@@ -136,6 +137,10 @@ public class Game implements Serializable{
             }
             Thread.sleep(700);
             System.out.println();
+        }
+        
+        else if(command.equals("help")){
+            new Help().helpCommand();
         }
     }
 
