@@ -70,7 +70,7 @@ public class TextAdventureGame {
                 } else{
                     // Taking initial details from the player
                     input.nextLine();
-                    System.out.println(UserInterface.WHITE+"\4-------------------------\4");
+                    System.out.println(UserInterface.WHITE+"\n\4-------------------------\4");
                     System.out.print(UserInterface.WHITE+"\n<\4> Your Name: ");
                     String pName = input.nextLine();
 
