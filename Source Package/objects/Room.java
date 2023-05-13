@@ -35,6 +35,10 @@ public class Room extends Description{
         return coins;
     }
 
+    public int[] getItems_no() {
+        return items_no;
+    }
+
     @Override
     public String toString() {
 		return "\n";
