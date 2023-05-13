@@ -175,7 +175,7 @@ public class Game implements Serializable{
                         System.out.println(UserInterface.WHITE+"You already have \""+getLocationRoomItem(item).getName()+"\" in your inventory.");
                     }
                 }
-                else if(item == items_no[items_no.length-1]){
+                else if(item == items_no[items_no.length-1] && added == false){
                     System.out.println(UserInterface.WHITE+"There is no \""+splitCommand[1]+"\" to collect.");
                 }
             }
