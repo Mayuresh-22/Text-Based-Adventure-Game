@@ -169,7 +169,7 @@ public class Game implements Serializable{
                         System.out.println(UserInterface.WHITE+"You have added \""+getLocationRoomItem(item).getName()+"\" to your Inventory");
                         break;
                     } else{
-                        System.out.println(UserInterface.WHITE+"You already have "+getLocationRoomItem(item).getName()+" in your inventory.");
+                        System.out.println(UserInterface.WHITE+"You already have \""+getLocationRoomItem(item).getName()+"\" in your inventory.");
                     }
                 }
             }
