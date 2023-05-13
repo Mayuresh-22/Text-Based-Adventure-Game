@@ -173,7 +173,9 @@ public class Game implements Serializable{
                     }
                 }
                 if(item == items_no[items_no.length-1]){
-
+                    else{
+                        System.out.println(UserInterface.WHITE+"There is no \""+getLocationRoomItem(item).getName()+"\" to collect.");
+                    }
                 }
             }
         }
