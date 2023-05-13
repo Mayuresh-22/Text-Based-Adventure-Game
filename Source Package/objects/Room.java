@@ -1,6 +1,7 @@
 package objects;
 
 
+// Class to manage properties of Game rooms
 public class Room extends Description{
     private int n, s, w, e, coins;
     public Room(String rName, String rDescription, int n, int s, int w, int e, int coins){
