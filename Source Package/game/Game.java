@@ -36,6 +36,7 @@ public class Game implements Serializable{
         /* Creating Collectables Item */
         items.add(new Item("Wood", "This wooden logs are of this gaint trees.\nIt is said that the things built from this wood,\nnever dies", 10));
         items.add(new Item("Lantern", "This Lantern will show you the way out of this deadly land", 15));
+        items.add(new Item("Lantern", "This Lantern will show you the way out of this deadly land", 15));
 
         /* Creating Game rooms */
         // 0
