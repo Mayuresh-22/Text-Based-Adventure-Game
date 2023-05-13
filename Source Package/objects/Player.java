@@ -1,6 +1,7 @@
 package objects;
 
 
+// Class to Manage Players Property and Actions
 public class Player extends Description{
     int location = 0;
     public int totalCoins=0;
