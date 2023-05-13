@@ -176,7 +176,7 @@ public class Game implements Serializable{
                     }
                 }
                 else if(item == items_no[items_no.length-1] && added == false){
-                    System.out.println(UserInterface.WHITE+"There is no \""+splitCommand[1]+"\" to collect.");
+                    System.out.println(UserInterface.RED+"There is no \""+splitCommand[1]+"\" to collect.");
                 }
             }
         }
