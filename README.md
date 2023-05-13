@@ -9,7 +9,7 @@ To play the game, you will need to have Java installed on your computer. You can
 Once you have Java installed, you can clone the repository using the following command:
 
 ```
-git clone https://github.com/<username>/Text-Based-Adventure-Game.git
+git clone https://github.com/Mayuresh-22/Text-Based-Adventure-Game.git
 ```
 
 After cloning the repository, navigate to the project directory and run the following command to compile the game:
@@ -26,7 +26,7 @@ java TextAdventureGame
 
 ## How to Play
 
-The game is played entirely through the command line interface. When you start the game, you will be presented with a prompt where you can enter commands to interact with the game. (We suggest you to run above game files in any modern IDE's eg Visual Studios, intellij etc)
+The game is played entirely through the command line interface. When you start the game, you will be presented with a prompt where you can enter commands to interact with the game. (We suggest you to run above game files in any modern IDE's eg Visual Studios, IntelliJ etc.)
 
 The following commands are available:
 
