@@ -77,7 +77,8 @@ public class Game implements Serializable{
 
     }
 
-    /* Functions to get Room or Item from the Loc/Index stored in Room objects */
+    /* Functions to get Room or Item from the Loc/Index stored in Player/Room objects */
+    // Returns Room 
     public Room getLocationRoom(){
         return map.get(player.getLocation());
     }
