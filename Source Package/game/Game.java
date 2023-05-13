@@ -146,7 +146,7 @@ public class Game implements Serializable{
     public void runCommandAction(String command) throws InterruptedException{
         // split commands
         String splitCommand[] = command.split(" ");
-        System.out.println(splitCommand[2]);
+        System.out.println(splitCommand.length);
         // look: Displays a description of the current room.
         if(splitCommand[0].equals("look")){
             for(int i = 0; i < getLocationRoom().getDescription().length(); i++){
