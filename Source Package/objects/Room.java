@@ -5,7 +5,8 @@ import java.util.Vector;
 // Class to manage properties of Game rooms
 public class Room extends Description{
     private int n, s, w, e, coins;
-    private Vector <Item>
+    private Vector <Item> items;
+    
     public Room(String rName, String rDescription, int n, int s, int w, int e, int coins){
         super(rName, rDescription);
         this.n = n;
