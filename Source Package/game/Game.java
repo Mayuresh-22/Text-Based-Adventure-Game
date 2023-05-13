@@ -165,7 +165,7 @@ public class Game implements Serializable{
             int items_no[] = getLocationRoom().getItems_no();
             for(int item: items_no){
                 if(getLocationRoomItem(item).getName().equalsIgnoreCase(splitCommand[1])){
-                    inventory.addInvent(item);
+                    inventory.addInvent(getLocationRoomItem(item));
                     System.out.println("taken \""+item.getName()+"\"");
                     break;
                 }
