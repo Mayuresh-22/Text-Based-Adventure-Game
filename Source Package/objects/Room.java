@@ -8,7 +8,7 @@ public class Room extends Description{
 
     public Room(String rName, String rDescription, int items_no[], int n, int s, int w, int e, int coins){
         super(rName, rDescription);
-        this.items_no = items;
+        this.items_no = items_no;
         this.n = n;
         this.s = s;
         this.w = w;
