@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Inventory{
 
     // Players Inventory
-    public ArrayList<Item> inventory = new ArrayList<Item>(null);
+    public ArrayList<Item> inventory = new ArrayList<Item>();
 
     // Adding Item to the inventory
     public void addInvent(Item item){
