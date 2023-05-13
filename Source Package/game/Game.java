@@ -33,6 +33,8 @@ public class Game implements Serializable{
         */
         player = new Player(pName, pDescription, 0);
 
+
+        /* Creating Game rooms */
         // 0
         map.add(new Room("Forest", GREEN+"The forest before you is a vast and ancient realm,\na place where the trees loom like giants and the very air is thick with magic and mystery.\nBut for those brave enough to explore its winding paths and hidden glades,\nthe forest is a place of wonder and enchantment,\na realm where anything is possible.", 1, 2, 4, -1, 500));
         //1
