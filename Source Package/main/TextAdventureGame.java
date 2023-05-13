@@ -25,7 +25,7 @@ public class TextAdventureGame {
     static void parseCommand(String command, Game gameEnv) throws InterruptedException{
         if(command.length()==1 && validCmdList.contains(command)){
             gameEnv.runCommandDirection(command);
-        } else if(command.length()>1 && validCmdList.contains(command)){
+        } else if(command.length()>1){
             gameEnv.runCommandAction(command);
         }
     }
