@@ -1,5 +1,7 @@
 package objects;
 
+
+// Class to manage the UI of Game
 public class UserInterface {
 
     // Color constants
