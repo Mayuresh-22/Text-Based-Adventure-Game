@@ -2,6 +2,8 @@ package help;
 
 import objects.UserInterface;
 
+
+// Class to manage `HELP` command
 public class Help {
     public void helpCommand(){
         System.out.println(UserInterface.WHITE+"\n\4-------------------------\4");
