@@ -86,7 +86,7 @@ public class Game implements Serializable{
          * In order to move the player to the desired location,
          * we first check whether players current room has opening in that direction or
          * not. If room has opening in that direction players new location is set else,
-         * special message will be shown to the Player 
+         * special message will be shown to the Player (NO EXIT)
          */
 
         Room tempRoom = getLocationRoom();
