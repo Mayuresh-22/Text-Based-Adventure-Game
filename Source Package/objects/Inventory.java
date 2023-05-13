@@ -15,7 +15,7 @@ public class Inventory{
     }
 
     // Check whether items contains in the inventory
-    public int contains(Item item){
+    public Boolean contains(Item item){
         return inventory.contains(item);
     }
 
