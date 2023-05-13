@@ -83,7 +83,7 @@ public class Game implements Serializable{
         return map.get(player.getLocation());
     }
 
-    // Returns Item class object 
+    // Returns Item class object from items vector stored at index specified
 
     // Direction Commands handling
     public void runCommandDirection(String command) throws InterruptedException{
