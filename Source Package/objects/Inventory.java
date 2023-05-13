@@ -15,6 +15,9 @@ public class Inventory{
     }
 
     // Check whether items contains in the inventory
+    public int contains(Item item){
+        
+    }
 
     // Removing Item from the inventory
     public Item remInvent(Item item){
