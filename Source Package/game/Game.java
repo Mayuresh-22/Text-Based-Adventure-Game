@@ -16,7 +16,7 @@ public class Game implements Serializable{
 
     // Vector array to store the Map places and their coordinates
     public Vector<Room> map = new Vector<>();
-    public Vector<Item> items = new Vector<>();
+    public Item items[];
 
     // creating player:
     public Player player = new Player();
