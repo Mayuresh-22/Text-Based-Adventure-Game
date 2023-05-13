@@ -14,6 +14,8 @@ public class Inventory{
         this.inventory.add(item);
     }
 
+    // Check whether items contains in the inventoru
+
     // Removing Item from the inventory
     public Item remInvent(Item item){
         return this.inventory.remove(this.inventory.indexOf(item));
