@@ -9,6 +9,7 @@ public class Room extends Description{
 
     public Room(String rName, String rDescription, Vector <Item> items, int n, int s, int w, int e, int coins){
         super(rName, rDescription);
+        this.items = items
         this.n = n;
         this.s = s;
         this.w = w;
