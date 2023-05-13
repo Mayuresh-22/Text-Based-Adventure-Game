@@ -84,7 +84,7 @@ public class Game implements Serializable{
     }
 
     // Returns Item class object from items vector stored at index specified
-    public Item getLocationRoomItem(){
+    public Item getLocationRoomItem(int index){
         return items.get(getLocationRoom().getItems_no());
     }
 
