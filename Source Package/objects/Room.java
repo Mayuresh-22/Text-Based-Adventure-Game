@@ -6,7 +6,7 @@ import java.util.Vector;
 public class Room extends Description{
     private int n, s, w, e, coins, items_no[];
 
-    public Room(String rName, String rDescription, Vector <Item> items, int n, int s, int w, int e, int coins){
+    public Room(String rName, String rDescription, int items_no, int n, int s, int w, int e, int coins){
         super(rName, rDescription);
         this.items = items;
         this.n = n;
