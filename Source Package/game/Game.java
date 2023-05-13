@@ -162,6 +162,7 @@ public class Game implements Serializable{
         // take <item>: Adds the specified item to the player's inventory.
         else if(splitCommand[0].equals("take") && splitCommand.length==2){
             int items_no[] = getLocationRoom().getItems_no();
+            boolean added;
             for(int item: items_no){
                 if(getLocationRoomItem(item).getName().equalsIgnoreCase(splitCommand[1])){
                     if(!inventory.contains(getLocationRoomItem(item))){
