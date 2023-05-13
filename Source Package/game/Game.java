@@ -16,7 +16,8 @@ public class Game implements Serializable{
 
     // Vector array to store the Map places and their coordinates
     public Vector<Room> map = new Vector<>();
-    public Item items[];
+    public Vector<Item> items = new Vector<>();
+
     // creating player:
     public Player player = new Player();
     // creating Inventory to store items
@@ -38,7 +39,7 @@ public class Game implements Serializable{
 
         /* Creating Game rooms */
         // 0
-        map.add(new Room("Forest", GREEN+"The forest before you is a vast and ancient realm,\na place where the trees loom like giants and the very air is thick with magic and mystery.\nBut for those brave enough to explore its winding paths and hidden glades,\nthe forest is a place of wonder and enchantment,\na realm where anything is possible.", 1, 2, 4, -1, 500));
+        map.add(new Room("Forest", GREEN+"The forest before you is a vast and ancient realm,\na place where the trees loom like giants and the very air is thick with magic and mystery.\nBut for those brave enough to explore its winding paths and hidden glades,\nthe forest is a place of wonder and enchantment,\na realm where anything is possible.", [0, 1], 1, 2, 4, -1, 500));
         //1
         map.add(new Room("Dead end", RED+"You come to a dead end.\nThe path ends abruptly, with no sign of a way forward.\nThe forest around you seems to close in, the trees pressing in from all sides.\nThe dead end seems to be more than just a simple obstacle; it feels like a warning,\na sign that you have wandered into a place where you do not belong.", -1, 0, -1, -1, -30));
         //2
