@@ -7,7 +7,7 @@ public class Room extends Description{
     private int n, s, w, e, coins;
     private Vector <Item> items;
 
-    public Room(String rName, String rDescription, Vector items int n, int s, int w, int e, int coins){
+    public Room(String rName, String rDescription, Vector <Item> items, int n, int s, int w, int e, int coins){
         super(rName, rDescription);
         this.n = n;
         this.s = s;
