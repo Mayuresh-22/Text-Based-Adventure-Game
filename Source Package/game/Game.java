@@ -168,6 +168,7 @@ public class Game implements Serializable{
                     if(!inventory.contains(getLocationRoomItem(item))){
                         inventory.addInvent(getLocationRoomItem(item));
                         System.out.println(UserInterface.WHITE+"You have added \""+getLocationRoomItem(item).getName()+"\" to your Inventory");
+                        added = truel
                         break;
                     } else{
                         System.out.println(UserInterface.WHITE+"You already have \""+getLocationRoomItem(item).getName()+"\" in your inventory.");
