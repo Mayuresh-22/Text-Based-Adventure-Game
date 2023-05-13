@@ -110,7 +110,6 @@ public class TextAdventureGame {
         do{
             System.out.print("<\4> ");
             command = input.nextLine().toLowerCase().strip();
-            System.out.println(command);
             parseCommand(command, gameEnv);
         } while(!command.equals("q"));
 
