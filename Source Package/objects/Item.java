@@ -1,6 +1,7 @@
 package objects;
 
 
+// Class for Collectables Items
 public class Item extends Description{
     int coins;
 
