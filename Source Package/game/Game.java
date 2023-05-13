@@ -70,7 +70,7 @@ public class Game implements Serializable{
         //17
         map.add(new Room("The Shimmering gateway", PURPLE+"The portal before you is a shimmering gateway,\na doorway between worlds that glows with a soft, otherworldly light.\nIt is said that this portal is only accessible to those who have proven their worth,\npassing through countless trials and challenges to reach this point.\nYou know that you must speak the magical words that you have gathered on your journey to activate the portal and gain access to the world beyond.\nIn an instant, you are transported to a world where you belong.\n\nTHE END", -1, -1, -1, -1, 1000));
     
-        items.add(new Item("Wooden logs", "This wooden logs are of this gaint trees.\nIt is said that the things built from this wood,\nnever dies", 10));
+        items.add(new Item("Wood", "This wooden logs are of this gaint trees.\nIt is said that the things built from this wood,\nnever dies", 10));
 
     }
 
