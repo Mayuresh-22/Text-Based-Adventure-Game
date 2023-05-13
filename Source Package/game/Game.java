@@ -78,10 +78,12 @@ public class Game implements Serializable{
     }
 
     /* Functions to get Room or Item from the Loc/Index stored in Player/Room objects */
-    // Returns Room object store at location
+    // Returns Room class object stored at location
     public Room getLocationRoom(){
         return map.get(player.getLocation());
     }
+
+    // Returns Item class object 
 
     // Direction Commands handling
     public void runCommandDirection(String command) throws InterruptedException{
