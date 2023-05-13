@@ -171,6 +171,7 @@ public class Game implements Serializable{
                         added = true;
                         break;
                     } else{
+                        added = true;
                         System.out.println(UserInterface.WHITE+"You already have \""+getLocationRoomItem(item).getName()+"\" in your inventory.");
                     }
                 }
