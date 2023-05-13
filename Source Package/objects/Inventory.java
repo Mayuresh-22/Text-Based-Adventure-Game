@@ -16,7 +16,7 @@ public class Inventory{
 
     // Check whether items contains in the inventory
     public int contains(Item item){
-        inventory.contains(item);
+        return inventory.contains(item);
     }
 
     // Removing Item from the inventory
