@@ -33,6 +33,7 @@ public class Game implements Serializable{
         */
         player = new Player(pName, pDescription, 0);
 
+        /* Creating Collectables Item */
 
         /* Creating Game rooms */
         // 0
