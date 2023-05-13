@@ -3,6 +3,7 @@ package objects;
 import java.util.ArrayList;
 
 
+// Class to Manage the Inventory of the Player
 public class Inventory{
 
     // Players Inventory
