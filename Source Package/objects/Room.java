@@ -1,7 +1,6 @@
 package objects;
 
 import java.util.Vector;
-import objects.Item;
 
 // Class to manage properties of Game rooms
 public class Room extends Description{
