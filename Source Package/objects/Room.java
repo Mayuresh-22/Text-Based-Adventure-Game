@@ -35,7 +35,7 @@ public class Room extends Description{
         return coins;
     }
 
-    public int[] getItems_no() {
+    public int[] getItemsNo() {
         return items_no;
     }
 
