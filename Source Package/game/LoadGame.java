@@ -16,7 +16,7 @@ import java.io.ObjectInputStream;
 
 public class LoadGame {
     public Game loadGame(){
-        File f = new File("Source Packages/save.txt");
+        File f = new File("Source Package\\save.txt");
         if(f.exists()){
             try{
                 FileInputStream file = new FileInputStream(f);
