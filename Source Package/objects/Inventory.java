@@ -9,7 +9,7 @@ public class Inventory extends Description{
     // Players Inventory
     public ArrayList<Item> inventory = new ArrayList<Item>();
 
-    Inventory(){
+    public Inventory(){
         super("Player's Inventory", "A place where user can store all the game collactibles");
     }
 
