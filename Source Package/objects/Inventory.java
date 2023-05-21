@@ -4,10 +4,14 @@ import java.util.ArrayList;
 
 
 // Class to Manage the Inventory of the Player
-public class Inventory{
+public class Inventory extends Description{
 
     // Players Inventory
     public ArrayList<Item> inventory = new ArrayList<Item>();
+
+    Inventory(){
+        super("Player's Inventory", "A place where user can store all the game collactibles");
+    }
 
     // Adding Item to the inventory
     public void addInvent(Item item){
