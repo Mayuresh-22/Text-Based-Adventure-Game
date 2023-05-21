@@ -19,7 +19,7 @@ import java.io.ObjectOutputStream;
 public class SaveGame {
     public void saveGame(Game game){
         try{
-            File f = new File("save.txt");
+            File f = new File("Source Packages/save.txt");
             f.createNewFile();
 
             FileOutputStream file = new FileOutputStream(f);
