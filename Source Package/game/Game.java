@@ -187,6 +187,6 @@ public class Game implements Serializable{
     // serializing object
     @Override
     public String toString() {
-		return "pName:" + player.getName() + "\npDescription: " + player.getDescription() + "\nLocation: " + player.getLocation() + "\npCurrent Room: " + getLocationRoom().getName();
+		return "pName:" + player.getName() + "\npDescription: " + player.getDescription() + "\nLocation: " + player.getLocation() + "\npCurrent Room: " + getLocationRoom().getName() + "\nTotal Coins Earned: " + player.getTotalCoins();
 	}
 }
