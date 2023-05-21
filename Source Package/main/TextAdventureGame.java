@@ -141,7 +141,7 @@ public class TextAdventureGame {
                 System.out.println("<\4> Quiting the Game");
             }
         } catch (Exception e) {
-            System.out.println(UserInterface.RED+"<\4> Error occured while saving the game\n");
+            System.out.println(UserInterface.RED+"<\4> Error occured while saving the game\n"+e.getMessage());
         }
     }
 }
