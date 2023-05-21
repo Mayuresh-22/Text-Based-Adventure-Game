@@ -17,7 +17,7 @@ import java.io.ObjectOutputStream;
 6. The file and objectFile are closed. */
 
 public class SaveGame {
-    public void saveGame(Game game){
+    public void saveGame(Game game) throws Exception{
         try{
             File f = new File("Source Packages/save.txt");
             f.createNewFile();
@@ -30,7 +30,7 @@ public class SaveGame {
             file.close();
             objectFile.close();
         } catch(Exception e){
-            System.out.println("SaveGame class error: "+e.getMessage());
+            throw new Exception("SaveGame class error: "+e.getMessage());
         }
     }
 }
